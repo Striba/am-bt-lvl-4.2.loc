@@ -22,12 +22,8 @@
                     <tr>
                         <td>{{$task->filename}}</td>
                         <td>{{$task->created_at}}</td>
-
-                        {{--<td><a href="{{public_path('tasks/'.$task->filename)}}" download="{{$task->filename}}" ><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-download"> Скачать</i></button></a> </td>--}}
                         <td><a href="tasks/{{$task->filename}}"  download="{{$task->filename}}"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-download"> Скачать</i></button></a> </td>
-                        {{--<td><a href="{{'tasks/'.$task->filename}}" download="{{$task->filename}}" ><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-download"> Скачать</i></button></a> </td>--}}
-                        {{--<td><a href="{{ URL::route('download', ['path' => public_path('tasks/'.$task->filename)]) }}" download><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-download"> Скачать</i></button></a> </td>--}}
-                        {{--//download="{{$task->filename}}"--}}
+                       
                     </tr>
                     @endforeach
                     </tbody>
