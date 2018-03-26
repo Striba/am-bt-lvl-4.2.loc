@@ -17,5 +17,4 @@ class ManagerController extends BaseController
             'userData' => $userData,
         ]);
     }
-
 }
