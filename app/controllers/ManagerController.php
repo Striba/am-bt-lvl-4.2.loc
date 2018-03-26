@@ -18,15 +18,4 @@ class ManagerController extends BaseController
         ]);
     }
 
-//    /**
-//     * Метод скачивания заданий для manager
-//     *
-//     * @param string $pathToFile путь к загружаемому файлу
-//     * @return mixed
-//     */
-//    public function downloadTask($pathToFile)
-//    {
-//        return Response::download($pathToFile);
-//    }
-
 }
