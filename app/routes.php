@@ -90,13 +90,6 @@ Route::group(['before' => 'auth'], function()
         'uses' => 'ManagerController@index'
     ]);
 
-//    //Скачиваение файла.
-//    Route::post('/manager/download/{path}',[
-//        'as' => 'download',
-//        'uses' => 'ManagerController@downloadtask'
-//    ]);
-
-
 
 ////Выход из кабинета(через анонимную функцию)
 //    Route::get('/logout', function(){
