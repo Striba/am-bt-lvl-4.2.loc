@@ -22,7 +22,7 @@
                     <tr>
                         <td>{{$task->filename}}</td>
                         <td>{{$task->created_at}}</td>
-                        <td><a href="tasks/{{$task->filename}}"  download="{{$task->filename}}"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-download"> Скачать</i></button></a> </td>
+                        <td><a href="{{asset('tasks/'.$task->filename)}}"  download="{{$task->filename}}"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-download"> Скачать</i></button></a> </td>
                        
                     </tr>
                     @endforeach
